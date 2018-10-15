@@ -1,0 +1,32 @@
+语句执行顺序通常称为控制流程或控制流。
+if-else 语句会在两个备选行动之间选择。
+程序到达 if-else 语句时，实际执行两个内嵌语句之一。Boolean_Expression 为true(满足条件)，执行 Yes_Statement。Boolean_Expression 为 false(不满足条件
+)，执行 No_Statement。注意，Boolean_Expression 必须包含在圆括号内(这是 C++ if-else语句的语法规则)。
+ if-else 语句的语法
+每个备选行动只有一个语句：
+ if (Boolean_Expression)
+ Yes_Statement
+ else
+  No_Statement
+每个备选行动有一组语句：
+if (Boolean_Expression)
+ {
+ Yes_Statement_1
+ Yes_Statement_2
+. . .
+ Yes_Statement_Last
+ }
+ else
+ {
+ No_Statement_1
+ No_Statement_1
+ . . .
+ No_Statement_Last
+ }
+ 
+布尔表达式是求值结果为 true 或 false 的表达式。if-else 语句肯定包含一个Boolean_Expression。最简单的 Boolean_Expression 由两个表达式(比如数字或变量)
+构成，它们使用图 总结的某个比较操作符进行比较。注意有的操作符由两个符号构成，例如==，!=，<=和>=。注意必须用双等号==表示相等，用!=表示不等。
+“逻辑与”操作符&&:用&&连接两个比较时，只有两个比较的结果都为 true(两个条件都满足)，整个表达式才为 true；否则整个表达式为 false。
+“逻辑或”操作符||:用||连接两个比较时，只要其中任何一个为 true 或者两个都为 true(满足任何条件)，整个表达式就为 true；否则，整个表达式为 false。
+陷阱：连续的不等式,不要在程序中使用如下所示的连续不等式!!!
+陷阱：该用==的时候用了=
