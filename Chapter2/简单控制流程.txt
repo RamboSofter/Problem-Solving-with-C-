@@ -30,3 +30,33 @@ if (Boolean_Expression)
 “逻辑或”操作符||:用||连接两个比较时，只要其中任何一个为 true 或者两个都为 true(满足任何条件)，整个表达式就为 true；否则，整个表达式为 false。
 陷阱：连续的不等式,不要在程序中使用如下所示的连续不等式!!!
 陷阱：该用==的时候用了=
+
+while 语句的语法
+含有多个语句的循环主体：
+while (Boolean_Expression)
+{
+     Statement_1
+     Statement_2
+     ...
+     Statement_Last
+}
+
+含有单个语句的循环主体：
+while(Boolean_Expression )
+     Statement
+     
+do-while 语句的语法：
+do
+{
+    Statement_1
+    Statement_2
+    ...
+    Statement_Last
+}while(Boolean_Expression);
+
+含有单个语句的循环主体：
+do
+   Statement
+while(Boolean_Expression);
+操作符++称为递增操作符，操作符--称为递减操作符。
+
