@@ -1,0 +1,46 @@
+1. 1 公吨(metric ton)等于 35273.92 盎司(ounce)。写一个程序，以盎司为单位读入一盒麦片(cereal)的重量，换算成公吨之后，输出这个重量，同时输出总共需要多少盒麦片才能凑足 1 公吨。你的程序应该允许
+用户任意重复计算。
+2. 计算数字 n 的平方根的巴比伦算法如下所示：
+1). 猜一个答案(第一次可以猜 n/2).，将值赋给 guess
+2). 计算 r = n / guess
+3). guess = (guess + r) / 2
+4). 回到步骤 2 重复。步骤 2 和 3 重复得越多，guess 就越接近 n 的平方根。写程序要求用户输入代表 n 的 double 值，使用巴比伦算法迭代 100 次。一个更有挑战性的版本是加
+入判断，如果当前 guess 和上一次 guess 相差不到 1%就输出答案。
+3.Solution to Practice Program 2.3
+许多跑步机在控制面板上显示英里/小时(mph)速度，但大多数跑步爱好者都用“步速”(pace)来衡量
+自己的跑步速度。步速一般是指跑一英里用了多少分钟多少秒，而不是使用 mph 作为单位。
+写程序以 mph 为单位输入一个值，将其换算为跑一英里的分秒数。例如，假定输入 6.5 mph，输出结
+果应该是跑一英里用了 9 分钟 13.8 秒。将 double值转换为 int(丢弃小数点后的任何值)请使用：
+intValue=static_cast<int>(dblVal);
+4. 写程序玩 Mad Lib 游戏。提示用户输入以下字符串：
+● 你的老师的姓或名(注意要么输入姓，要么输入名)
+● 你的姓或名(注意要么输入姓，要么输入名)
+● 一种食物
+● 100 到 120 之间的一个数字
+● 一个形容词
+● 一种颜色
+● 一种动物
+输入这些字符串后，它们被代入下面的故事，并输出到控制台：
+Dear Instructor,[老师的姓或名]
+I am sorry that I am unable to turn in my homework at this time. First, I ate a rotten [食物],
+which made me turn [颜色] and extremely ill. I came down with a fever of [100～120]. Next, my
+[形容词] pet [动物] must have smelled the remains of the [食物] on my homework, because he ate
+it. I am currently rewriting my homework and hope you will accept it late.
+Sincerely,
+[你的姓或名]
+如果愿意写一个中文版的程序，请使用以下故事模板①：
+亲爱的[老师姓名]老师：
+对不起，我暂时交不了作业。我先是吃了一个烂掉的[食物]，我全身都变[颜色]了，感觉很糟糕，现在发烧[100~120]
+度。然后，我的[形容词]宠物[动物]肯定是闻到了作业本上的[食物]的味道，因为它居然把作业本给吃掉了。现在我正在重
+新写作业，希望晚些时候能交上来。
+5. 以下程序计算给定半径的球体的体积。能编译和运行，但不符合 2.5 节推荐的编程风格。请根据本章
+描述的风格重写程序，添加缩进和注释，并使用合理命名的常量。
+#include <iostream>
+using namespace std;
+int main() {
+double radius, vm;
+cout << "输入球体半径：" << endl; cin >> radius;
+vm = (4.0 / 3.0) * 3.1415 * radius * radius * radius;
+cout << " 体积是：" << vm << endl;
+return 0;
+}
