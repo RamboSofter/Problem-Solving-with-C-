@@ -151,3 +151,58 @@ int n = 1;
 do
 cout << n << " ";
 while (++n <= 3);
+25. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+for (int count = 1; count < 5; count++)
+cout << (2 * count) << "";
+26. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+for (int n = 10; n > 0; n = n - 2)
+{
+cout << "Hello ";
+cout << n << endl;
+}
+27. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+for (double sample = 2; sample > 0; sample = sample - 0.5)
+cout << sample << " ";
+28. 在以下每种情况中，最适合使用哪种循环(while，do-while或者 for)：
+a. 数列累加，比如 1/2 + 1/3 + 1/4 + 1/5 + … + 1/10。
+b. 读入学生的所有科目的考试分数列表。
+c. 读取某部门员工的病假天数。
+d. 测试一个函数，检查向其传递不同参数值时的结果。
+29. 将以下循环改写为 for循环：
+a. int i = 1;
+while ( i <= 10)
+{
+if (i < 5 && i != 2)
+cout << 'X';
+i++;
+}
+b. int i = 1;
+while ( i <= 10)
+{
+cout << 'X';
+i = i + 3;
+}
+c. long m = 100;
+do
+{
+cout << 'X';
+m = m + 100;
+} while (m < 1000);
+30. 以下循环会输出什么结果？说明 n值和变量 log的值的关系。
+int n = 1024;
+int log = 0;
+for (int i = 1; i < n; i = i * 2)
+log++;
+cout << n << " " << log << endl;
+31. 以下循环会输出什么结果？然后再对这段代码进行评述。
+int n = 1024;
+int log = 0;
+for (int i = 1; i < n; i = i * 2);
+log++;
+cout << n << " " << log << endl;
+32. 以下循环会输出什么结果？然后再对这段代码进行评述。
+int n = 1024;
+int log = 0;
+for (int i = 0; i < n; i = i * 2)
+log++;
+cout << n << " " << log << endl;
