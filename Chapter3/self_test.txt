@@ -22,3 +22,64 @@ l. (5 && 7) + (!6)
 j = -1;
 if ((j > 0) && (1/(j+1) > 10))
 cout << i << endl;
+5. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+int x = 2;
+cout << "Start\n";
+if (x <= 3)
+if (x != 0)
+cout << "Hello from the second if.\n";
+else
+cout << "Hello from the else.\n";
+cout << "End\n";
+cout << "Start again\n";
+if (x > 3)
+if (x != 0)
+cout << "Hello from the second if.\n";
+else
+cout << "Hello from the else.\n";
+cout << "End again\n";
+6. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+int extra = 2;
+if (extra < 0)
+cout << "small";
+else if (extra == 0)
+cout << "medium";
+else
+cout << "large";
+7. 将自测题 6 的赋值语句改成下面这样，会得到什么输出结果？
+int extra = -37;
+8. 将自测题 6 的赋值语句改成下面这样，会得到什么输出结果？
+int extra = 0;
+9. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+int x = 200;
+cout << "Start\n";
+if (x < 100)
+cout << "First Output.\n";
+else if (x > 10)
+cout << "Second Output.\n";
+else
+cout << "Third Output.\n";
+cout << "End\n";
+10. 将自测题 9 的布尔表达式(x > 10)变成(x > 100)，会得到什么输出结果？
+11. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+int x = SOME_CONSTANT;
+cout << "Start\n";
+if (x < 100)
+cout << "First Output.\n";
+else if (x > 100)
+cout << "Second Output.\n";
+else
+cout << x << endl;
+cout << "End\n";
+SOME_CONSTANT的值由你自己设置。它是 int类型的常量。假定最后输出的既不是"First Output."，
+也不是"Second Output."，那么应该将 SOME_CONSTANT设成哪个值是不言而喻的。
+12. 写多路 if-else语句，将 int变量 n的值划分为以下类别，并输出合适的消息：
+n < 0 或者 0 ≤ n ≤ 100 或者 n > 100
+13. 给定以下声明和输出语句，假定将它嵌入一个正确的程序中，会得到什么输出结果？
+enum Direction { N, S, E, W };
+// …
+cout << W << " " << E << " " << S << " " << N << endl;
+14. 给定以下声明和输出语句，假定将它嵌入一个正确的程序中，会得到什么输出结果？
+enum Direction { N = 5, S = 7, E = 1, W };
+// …
+cout << W << " " << E << " " << S << " " << N << endl;
