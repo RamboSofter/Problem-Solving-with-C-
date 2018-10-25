@@ -1,0 +1,24 @@
+1. 判断以下每个布尔表达式的值为 true还是 false，假定变量 count的值为 0，变量 limit的值为 10。
+答案必须是 true或 false这两个值之一。
+a. (count == 0) && (limit < 20)
+b. count == 0 && limit < 20
+c. (limit > 20) || (count < 5)
+d. !(count == 12)
+e. (count == 1) && (x < y)
+f. (count < 10) || (x < y)
+g. !( ((count < 10) || (x < y)) && (count >= 0) )
+h. ((limit/count) > 7) || (limit < 20)
+i. (limit < 20) || ((limit/count) > 7)
+j. ((limit/count) > 7) && (limit < 0)
+k. (limit < 0) && ((limit /count) > 7)
+l. (5 && 7) + (!6)
+
+2. 指出 C++中能改变执行顺序的两种语句。请给出一些例子。
+3. 在高等代数中，我们知道数值区间可如下表示：
+2 < x < 3
+在 C++中，同样的表示法却不能定义你所希望的区间。请解释为什么，并给出正确的 C++布尔表达式
+以指定 x 的取值范围为 2～3。
+4. 以下语句会产生除以 0 错误吗？
+j = -1;
+if ((j > 0) && (1/(j+1) > 10))
+cout << i << endl;
