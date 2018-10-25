@@ -83,3 +83,52 @@ cout << W << " " << E << " " << S << " " << N << endl;
 enum Direction { N = 5, S = 7, E = 1, W };
 // …
 cout << W << " " << E << " " << S << " " << N << endl;
+15. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+int firstChoice = 1;
+switch (firstChoice + 1)
+{
+case 1:
+cout << "Roast beef\n";
+break;
+case 2:
+cout << "Roast worms\n";
+break;
+case 3:
+cout << "Chocolate ice cream\n";
+case 4:
+cout << "Onion ice cream\n";
+break;
+default:
+cout << "Bon appetit!\n";
+}
+16. 将自测题 15 的第一行变成下面这样，会得到什么输出结果？
+int firstChoice = 3;
+17. 将自测题 15 的第一行变成下面这样，会得到什么输出结果？
+int firstChoice = 2;
+18. 将自测题 15 的第一行变成下面这样，会得到什么输出结果？
+int firstChoice = 4;
+19. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+int number = 22;
+{
+int number = 42;
+cout << number << " ";
+}
+cout << number;
+20. 虽然不建议采用这种风格来编程，但在这个练习中，我们故意使用嵌套块来帮助你理解作用域规则。
+将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+{
+int x = 1;
+cout << x << endl;
+{
+cout << x << endl;
+int x = 2;
+cout << x << endl;
+{
+cout << x << endl;
+int x = 3;
+cout << x << endl;
+}
+cout << x << endl;
+}
+cout << x << endl;
+}
