@@ -132,3 +132,22 @@ cout << x << endl;
 }
 cout << x << endl;
 }
+
+21. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+int count = 3;
+while (count-- > 0)
+cout << count << " ";
+22. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+int count = 3;
+while (--count > 0)
+cout << count << " ";
+23. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+int n = 1;
+do
+cout << n << " ";
+while (n++ <= 3);
+24. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+int n = 1;
+do
+cout << n << " ";
+while (++n <= 3);
