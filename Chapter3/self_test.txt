@@ -206,3 +206,23 @@ int log = 0;
 for (int i = 0; i < n; i = i * 2)
 log++;
 cout << n << " " << log << endl;
+
+33. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+int n = 5;
+while (--n > 0)
+{
+if (n == 2)
+break;
+cout << n << " ";
+}
+cout << "End of Loop.";
+34. 将以下代码嵌入一个完整的程序中，会得到什么输出结果？
+int n = 5;
+while (--n > 0)
+{
+if (n == 2)
+exit(0);
+cout << n << " ";
+}
+cout << "End of Loop.";
+35. 解释 break语句的作用。在哪些地方使用 break语句是有效的？
